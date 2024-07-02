@@ -6,11 +6,11 @@ pip install flask pandas scikit-learn
 ```
 # Running the project:
 
-### Running the project via command line is pretty simple, just "cd" into the directory and run:
+### 1 Running the project via command line is pretty simple, just "cd" into the directory and run:
 ```
 python app.py
 ```
-### The web application runs on the local server make sure to paste the below address with the port number in a web browser to use the interface:
+### 2 The web application runs on the local server, make sure to paste the below address with the port number in a web browser to use the interface:
 ```
 http://127.0.0.1:5000
 ```
