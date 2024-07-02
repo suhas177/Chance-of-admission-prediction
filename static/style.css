@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(42, 40, 40);
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  background-color: #26a65b;
+  padding: 2em;
+  text-align: center;
+  color: white;
+}
+
+.heading:hover {
+  background-color: #9d5d4d;
+}
+
+form {
+  background-color: rgb(146, 145, 145);
+  padding: 2em;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 2em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #26a65b;
+}
+
+#toefl_score,
+#gre_score {
+  width: 48%;
+  margin-right: 2%;
+}
+
+#university_rating,
+#sop,
+#lor,
+#cgpa {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.predict {
+  background-color: #26a65b;
+  color: rgb(20, 19, 19);
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 1em auto;
+  font-size: x-large;
+}
+
+.predict:hover {
+  background-color: #9d5d4d;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+  #toefl_score,
+  #gre_score {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 1%;
+  }
+}

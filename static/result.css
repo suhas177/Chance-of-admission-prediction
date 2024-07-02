@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(42, 40, 40);
+}
+
+.output {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(146, 145, 145);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 20px;
+}
+
+#search-btn{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  
+}
+
+.search-bar button:hover {
+  background-color: #3e8e41;
+}
+
+.search-bar button:focus {
+  outline: none;
+}
+
+.universities {
+  margin-top: 1rem;
+  overflow-x: auto;
+  max-height: 800px;
+  max-width: 900px;
+}
+
+.universities table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.universities th,
+.universities td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.universities th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+

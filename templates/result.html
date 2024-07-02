@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/result.css" />
+  </head>
+  <body>
+    <br />
+    <div class="search-bar">
+      <input
+        type="text"
+        id="search-query"
+        placeholder="Search Universities..."
+      />
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="output">
+      <h1>Your Admission Chance: {{ prediction }}%</h1>
+      {% if prediction > 80 %}
+      <h1>Eligible Universities:</h1>
+      {% endif %}
+      <div class="universities">{{ universities | safe }}</div>
+    </div>
+    
+    <!-- Include jQuery library  and javascript section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $("#search-btn").click(function () {
+        var query = $("#search-query").val();
+        query = query.trim().toLowerCase();
+        $(".universities tr").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(query) > -1);
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        // Get the input field and button elements
+        const inputField = document.getElementById("search-query");
+        const myButton = document.getElementById("search-btn");
+
+        // event listener for the keypress event on the input field
+        inputField.addEventListener("keypress", function (event) {
+          // Check if the pressed key is Enter (key code 13)
+          if (event.key === "Enter") {
+            // Trigger a click event on the button
+            myButton.click();
+          }
+        });
+
+        myButton.addEventListener("click", function () {
+          // extra function if required
+        });
+      });
+    </script>
+  </body>
+</html>
