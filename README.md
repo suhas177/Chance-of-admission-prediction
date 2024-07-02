@@ -15,3 +15,7 @@ python app.py
 http://127.0.0.1:5000
 ```
 
+# Screenshot:
+
+![image](https://github.com/suhas177/Chance-of-admission-prediction/assets/97055087/b6014193-65cd-44cd-8df0-95a65873ec16)
+
